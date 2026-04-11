@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gholadighi – The Rural Life</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Inter:wght@400;500;600&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3 { font-family: 'Merriweather', serif; }
+    .hero-bg {
+      background-image: linear-gradient(rgba(20, 60, 20, 0.7), rgba(20, 60, 20, 0.7)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2000&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="bg-emerald-50 text-gray-800 antialiased">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-green-900/95 backdrop-blur shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center py-4">
+        <a href="#" class="text-white text-xl font-bold tracking-wider font-serif">Gholadighi</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#" class="text-green-50 hover:text-green-300 transition-colors font-medium">Home</a>
+          <a href="#about" class="text-green-50 hover:text-green-300 transition-colors font-medium">About</a>
+          <a href="#gallery" class="text-green-50 hover:text-green-300 transition-colors font-medium">Gallery</a>
+          <a href="#blog" class="text-green-50 hover:text-green-300 transition-colors font-medium">Stories</a>
+          <a href="#contact" class="text-green-50 hover:text-green-300 transition-colors font-medium">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-bg text-white py-32 md:py-48 text-center px-4">
+    <h1 class="text-5xl md:text-6xl font-bold mb-4 drop-shadow-lg">Gholadighi</h1>
+    <p class="text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto drop-shadow-md">Experience the beauty, simplicity, and tranquility of rural life.</p>
+    <a href="#gallery" class="inline-block px-8 py-3 bg-green-600 hover:bg-green-500 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1">Explore Our Village</a>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-12 space-y-24">
+    <!-- About Section -->
+    <section id="about" class="scroll-mt-24">
+      <div class="bg-white rounded-2xl shadow-sm border border-green-100 overflow-hidden flex flex-col md:flex-row">
+        <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
+          <h2 class="text-3xl font-bold text-green-900 mb-4">About Gholadighi</h2>
+          <div class="w-16 h-1 bg-green-500 mb-6"></div>
+          <p class="text-gray-600 leading-relaxed text-lg mb-6">
+            Gholadighi is a peaceful rural village full of lush greenery, vibrant agriculture, and a traditional lifestyle. 
+          </p>
+        </div>
+        <div class="md:w-1/2 min-h-[300px] bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1596701062351-8c2c14d1fdd0?q=80&w=1000&auto=format&fit=crop');">
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="scroll-mt-24">
+      <h2 class="text-3xl font-bold text-green-900 mb-8 text-center">Photo Gallery</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?q=80&w=800&auto=format&fit=crop" class="rounded-xl h-64 w-full object-cover">
+        <img src="https://images.unsplash.com/photo-1528183429752-a97d0bf99b5a?q=80&w=800&auto=format&fit=crop" class="rounded-xl h-64 w-full object-cover">
+        <img src="https://images.unsplash.com/photo-1590055531615-f16d36ffe8ec?q=80&w=800&auto=format&fit=crop" class="rounded-xl h-64 w-full object-cover">
+        <img src="https://images.unsplash.com/photo-1589405858862-2ac9cbf41369?q=80&w=800&auto=format&fit=crop" class="rounded-xl h-64 w-full object-cover">
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="scroll-mt-24 text-center pb-20">
+      <h2 class="text-3xl font-bold text-green-900 mb-4">Follow Our Journey</h2>
+      <p class="text-gray-600 mb-8">Stay updated through our community page.</p>
+      <a href="https://facebook.com" target="_blank" class="inline-flex items-center px-8 py-3 bg-[#1877F2] text-white font-bold rounded-lg hover:bg-blue-600 transition-colors">
+        Connect on Facebook
+      </a>
+    </section>
+  </main>
+
+  <footer class="bg-green-950 text-white py-12 text-center">
+    <p>© 2026 Gholadighi – The Rural Life</p>
+  </footer>
+</body>
+</html>
